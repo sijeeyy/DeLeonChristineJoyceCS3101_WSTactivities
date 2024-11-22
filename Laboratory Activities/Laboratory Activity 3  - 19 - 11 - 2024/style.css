@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100..900&family=Teko:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #e8f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e8f4ff; 
+  z-index: -1; 
+}
+  
+h2 {
+    text-align: left;
+    font-size: 1.5rem; 
+    color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: #e9f3ff;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 14px;
+  font-size: 1rem;
+  resize: none;
+  height: 270px;
+  background-color: #dfeef3;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lexend Deca", sans-serif;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.07), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+textarea:focus {
+  outline: none;
+  background-color: #e2f1f7; 
+}
+
+.bottom-section {
+  display: flex;
+  width: 94%;
+  align-self: center;
+}
+
+.wordBox, .sentenceBox{
+  width: 50%; 
+  font-size: 1.2rem;
+  text-align:center;
+  border-radius: 5px;
+  height: 50px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-container{
+  background-color: #2f4156;
+  padding:15px 0px 2px 28px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-bottom: 30px;
+  font-family: "Teko", sans-serif;
+}
+
+.text-container{
+  width: 91%;
+  align-self: center;
+}
+
+#wordCount, #sentenceCount{
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#sentenceCount{
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+#textInput::placeholder {
+  color: gray;
+  opacity: .4;
+}
